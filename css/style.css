@@ -1,0 +1,314 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:wght@300&display=swap');
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.landing{
+    background-image: url(../images/fondo.jpg);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+#titulo-lading{
+    width: 100%;
+    align-items: flex-start;
+    text-align: center;
+    text-shadow: 0px 0px 8px #000000;
+    padding-top: 13rem;
+    padding-bottom: 5rem;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Pacifico', cursive;
+    font-style:italic;
+    letter-spacing:1.2rem;
+    font-size:7rem;
+
+        animation-duration: 2s;
+        animation-name: caida-titulo;
+}
+
+@keyframes caida-titulo {
+    from {
+        margin-left: 100%;
+        width: 300%
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+
+
+.landing div{
+    justify-content: center;
+}
+
+.landing div div{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;      
+        margin-bottom: 1rem;
+
+}
+.button-landing{
+    align-items: center;
+}
+
+
+/* BOTONES LANDING */
+.landing div div button{
+    box-shadow: 0 8px 6px -6px black;
+    color: black;
+    background-color: #ffffff;
+    border-color: #6c757d; 
+}
+.landing div div button:hover{
+    
+    background-color: #000000b2;
+
+}
+
+
+
+/* LOGIN */
+.formu-login{
+    margin: 0 auto;
+}
+
+h1{
+   text-align: center;
+   margin-top: 5rem;
+}
+.contenedor-login{
+    background-color: #5a5a5abe;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    color: #ffffff;
+}
+
+.formu-login div div button{
+    color: black;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+
+}
+
+.formu-login div div button:hover{
+    color: #ffffff;
+    background-color: #000000b2;
+
+}
+
+.formu-login div{
+    align-items: flex-start;
+}
+#log-in{
+align-self: flex-end;
+margin-right: 3rem;
+margin-top: 1rem;
+}
+
+#enviarYErrores p{
+    justify-content: center;
+}
+
+.form-group small{
+    color: #cacaca;
+    font-style:italic;
+}
+
+#enviar p a {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.445);
+}
+
+
+#enviarYErrores{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 0;
+}
+
+#enviar{
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#errores{
+    list-style: none;
+}
+
+.oculto{
+    display: none;
+}
+
+.error-input{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    /* border: 1px solid #ced4da; */
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border: 2px solid red;
+}
+
+/*Texto que sale con un error*/
+.error-texto{
+    color:white;
+    list-style: none;
+    background-color:#ff0000;
+    border: #5a5a5abe;
+    
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 3rem;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+}
+
+ul{
+    margin-top: 1.5rem;
+}
+
+/* REGISTRO */
+
+#esExito{
+    background-color:  #5a5a5abe; 
+    width: 60%;
+    margin-top: 5rem;
+}
+
+#esExito h2{
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgb(95, 95, 95);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#btn-registrarse{
+    
+align-self: flex-end;
+margin-right: 3rem;
+margin-top: 1rem;
+}
+
+#btn-registrarse:hover{
+    color: #ffffff;
+    background-color: #000000b2;
+
+}
+
+/*Estilo formulario agregarProducto*/
+.formulario-agregar{
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Julk*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.botonAgregar{
+    color: white;
+   
+}
+
+a:hover {
+    color: white;
+}
+
+.botonLista{
+    color: white;
+}
+
+.btn-eliminar1{
+    background-color: red;
+    color: white;
+}
+
+#tabla{
+    text-align: center;
+}
+
+#contenido{
+    text-align: center;
+}
+
+
+/*MEDIA QUERIES*/
+@media (max-width:950px){
+    #titulo-lading{
+        font-size: 3rem;
+    }
+    
+    .btn-group-lg>.btn, .btn-lg {
+    font-size: 1rem;
+}
+
+.contenedor-login{
+    width: 85%;
+}
+
+}
+
+@media (max-width:500px){
+    #titulo-lading{
+        font-size: 1.8rem;
+    }
+    .contenedor-login h1{
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        padding-top: 1rem;
+    }
+    th{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:650px){
+    .landing div {
+        justify-content: space-evenly;
+    }
+
+    .error-texto{
+        font-size: 0.8rem;
+    }
+
+    .oculto{
+        font-size: 1.3rem;
+    }
+    .landing{
+        
+    overflow: scroll;
+    }
+}
+@media (max-width:400px){
+    #titulo-lading{
+        font-size: 1.3rem;
+    }
+}
